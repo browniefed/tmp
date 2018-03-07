@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@vx/curve": "0.0.153",
+    "@vx/event": "0.0.153",
+    "@vx/scale": "0.0.153",
+    "@vx/shape": "0.0.158",
+    "@vx/tooltip": "0.0.158",
+    "d3-array": "^1.2.1",
+    "d3-time-format": "^2.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
