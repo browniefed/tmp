@@ -7,7 +7,7 @@ const reducer = action => (state, props) => {
   switch (action.type) {
     case INCREMENT:
       return {
-        value: state.value + 1,
+        value: state.value + action.amount,
       };
     case DECREMENT:
       return {
@@ -26,6 +26,7 @@ class App extends Component {
     this.setState(
       reducer({
         type: INCREMENT,
+        amount: 2
       }),
     );
   };
