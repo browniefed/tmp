@@ -23,7 +23,7 @@ class App extends Component {
         <div className="text" style={{ backgroundColor: valid ? "green" : "red" }}>
           Valid Data: {"" + valid}
         </div>
-        <button onClick={() => this.setState({ optionalObject: { otherData: "Test" } })}>
+        <button onClick={() => this.setState({ optionalObject: {} })}>
           Add Optional
         </button>
       </div>
