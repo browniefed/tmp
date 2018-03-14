@@ -1,8 +1,33 @@
 import React, { Component } from "react";
+import { line, curveLinear } from "d3-shape";
+import { scaleLinear } from "d3-scale";
+import { data } from "./data";
+const width = 500;
+const height = 300;
+
+const xSelector = d => d.x;
+const ySelector = d => d.y;
+const xScale = scaleLinear()
+  .range([0, width])
+  .domain([0, 10]);
+
+const yScale = scaleLinear()
+  .range([0, height])
+  .domain([0, 500]);
 
 class App extends Component {
   render() {
-    return <div />;
+    const path = line()
+      .x(d => xScale(xSelector(d)))
+      .y(d => yScale(ySelector(d)));
+
+    return (
+      <div>
+        <svg width={500} height={300}>
+          <path d={path(data)} stroke="#000" strokeWidth={1} fill="none" />
+        </svg>
+      </div>
+    );
   }
 }
 
