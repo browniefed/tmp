@@ -23,7 +23,7 @@ class App extends Component {
 
     return (
       <div>
-        <svg width={500} height={300}>
+        <svg width={width} height={height}>
           <path d={path(data)} stroke="#000" strokeWidth={1} fill="none" />
         </svg>
       </div>
