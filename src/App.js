@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { line } from "d3-shape";
 import { scaleLinear } from "d3-scale";
 import { data } from "./data";
+import { data as downUpData } from "./down_up";
 
 const width = 500;
 const height = 300;
