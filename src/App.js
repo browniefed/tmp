@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { line, curveLinear } from "d3-shape";
+import { line } from "d3-shape";
 import { scaleLinear } from "d3-scale";
 import { data } from "./data";
+
 const width = 500;
 const height = 300;
 
