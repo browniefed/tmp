@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { line } from "d3-shape";
+import { line, curveStep } from "d3-shape";
 import { scaleLinear } from "d3-scale";
 import { data } from "./data";
 import { data as downUpData } from "./down_up";
@@ -15,18 +15,20 @@ const xScale = scaleLinear()
 
 const yScale = scaleLinear()
   .range([0, height])
+  // .range([height, 0])
   .domain([0, 500]);
 
 class App extends Component {
   render() {
     const path = line()
       .x(d => xScale(xSelector(d)))
-      .y(d => yScale(ySelector(d)));
+      .y(d => yScale(ySelector(d)))
+      // .curve(curveStep)
 
     return (
       <div>
         <svg width={width} height={height}>
-          <path d={path(data)} stroke="#000" strokeWidth={1} fill="none" />
+          <path d={path(data)} stroke="#ff6347" strokeWidth={3} fill="none" />
         </svg>
       </div>
     );
