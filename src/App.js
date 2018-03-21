@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { line } from "d3-shape";
+import { data } from "./data";
 
 const width = window.innerWidth - 50;
 const height = 250;
