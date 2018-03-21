@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   { views: "200", time: "2017-07-03T00:00:00Z" },
   { views: "800", time: "2017-07-02T00:00:00Z" },
   { views: "1247", time: "2017-07-01T00:00:00Z" },
