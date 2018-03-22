@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-
 import { Switch, Route, Link } from "react-router-dom";
+import "./app.css";
 
 const Profile = () => <div>You're on the Profile Tab</div>;
 const Comments = () => <div>You're on the Comments Tab</div>;
@@ -12,15 +12,15 @@ class App extends Component {
 
     return (
       <div>
-        Hey welcome home!
+        <h1>Hey welcome home!</h1>
         <div>
-          <Link to={`${path}/profile`}>Profile</Link>
-          <Link to={`${path}/comments`}>Comments</Link>
-          <Link to={`${path}/contact`}>Contact</Link>
+          <Link to={`${path}`} className="link">Profile</Link>
+          <Link to={`${path}/comments`} className="link">Comments</Link>
+          <Link to={`${path}/contact`} className="link">Contact</Link>
         </div>
-        <div>
+        <div className="tabs">
           <Switch>
-            <Route path={`${path}/profile`} component={Profile} />
+            <Route path={`${path}`} exact component={Profile} />
             <Route path={`${path}/comments`} component={Comments} />
             <Route path={`${path}/contact`} component={Contact} />
           </Switch>
