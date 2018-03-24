@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div>
         <h1>Hey welcome home!</h1>
-        <div>
+        <div className="links">
           <Link to={`${path}`} className="link">Profile</Link>
           <Link to={`${path}/comments`} className="link">Comments</Link>
           <Link to={`${path}/contact`} className="link">Contact</Link>
