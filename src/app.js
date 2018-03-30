@@ -9,9 +9,9 @@ const ProtectedRoute = ({ component: Comp, loggedIn, path, ...rest }) => {
     <Route
       path={path}
       {...rest}
-      render={() => {
+      render={(props) => {
         return loggedIn ? (
-          <Comp {...rest} />
+          <Comp {...rest} {...props} />
         ) : (
           <Redirect
             to={{
