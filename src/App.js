@@ -9,7 +9,9 @@ const Photo = ({ location }) => {
   return (
     <div className={modal ? "modal" : undefined}>
       {modal && <Link to="/">Close</Link>}
-      <p>You're looking at a photo!</p>
+      <div>
+        <img src="https://source.unsplash.com/random" />
+      </div>
     </div>
   );
 };
