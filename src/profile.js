@@ -4,7 +4,7 @@ class Profile extends Component {
   render() {
     return (
       <div>
-        Nice looking profile!
+        Nice looking profile! {this.props.message}
       </div>
     );
   }

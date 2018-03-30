@@ -5,6 +5,9 @@ import Profile from "./profile";
 import "./app.css";
 
 class App extends Component {
+  state = {
+    message: "You're great!",
+  };
   render() {
     return (
       <div>
@@ -19,7 +22,7 @@ class App extends Component {
         <div className="tabs">
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/profile" component={Profile} />
+            <Route path="/profile" render={props => <Profile {...props} {...this.state} />} />
           </Switch>
         </div>
       </div>
