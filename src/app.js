@@ -51,7 +51,6 @@ class App extends Component {
 
     return (
       <div>
-        <h1>Hey welcome home!</h1>
         <div className="links">
           <Link to="/" className="link">
             Home
