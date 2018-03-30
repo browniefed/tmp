@@ -18,7 +18,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hey welcome home!</h1>
         <div className="links">
           <Link to="/" className="link">
             Home
