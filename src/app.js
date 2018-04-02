@@ -11,7 +11,7 @@ const ProtectedRoute = ({ component: Comp, loggedIn, path, ...rest }) => {
       {...rest}
       render={(props) => {
         return loggedIn ? (
-          <Comp {...rest} {...props} />
+          <Comp {...props} />
         ) : (
           <Redirect
             to={{
