@@ -31,7 +31,7 @@ class App extends Component {
       this.setState({
         loading: true,
       });
-      setTimeout(() => {
+      this.timeout = setTimeout(() => {
         this.setState({
           loading: false,
         });
