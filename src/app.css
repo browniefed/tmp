@@ -17,6 +17,7 @@ input[type=text], input[type=email] {
   border-radius: 3px;
   padding-left: 8px;
   margin: 8px 0;
+  color: #2D3036;
 }
 
 .next {
