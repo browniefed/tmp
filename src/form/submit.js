@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Profile extends Component {
+class SubmitPage extends Component {
   render() {
     return (
       <div>
-        Nice looking profile!
+        
       </div>
     );
   }
 }
 
-export default Profile;
+export default SubmitPage;
