@@ -9,3 +9,24 @@
   padding: 20px;
   border: 1px solid #f5f5f5;
 }
+
+input[type=text], input[type=email] {
+  height: 46px;
+  width: 250px;
+  border: 1px solid #b1bfc4;
+  border-radius: 3px;
+  padding-left: 8px;
+  margin: 8px 0;
+}
+
+.next {
+  padding: 8px 20px;
+  border-radius: 3px;
+  background-color: #418bca;
+  outline: 0;
+  display: inline-block;
+  border: none;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
