@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@vx/event": "^0.0.161",
+    "@vx/mock-data": "^0.0.161",
+    "@vx/scale": "^0.0.161",
+    "@vx/shape": "^0.0.162",
+    "d3-array": "^1.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
