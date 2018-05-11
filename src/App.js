@@ -80,7 +80,6 @@ class App extends Component {
 
         {position && (
           <Line
-            data={stock}
             from={{ x: position.x, y: 0 }}
             to={{ x: position.x, y: height }}
             strokeWidth={1}
